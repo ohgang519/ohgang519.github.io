@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0; padding:0; box-sizing:border-box; font-family:'Montserrat';}
+li{list-style-type:none;}
+a{text-decoration:none; color:inherit;}
+img{vertical-align:top; }
+
+.wrap{background:#282828; height:100vh; display:flex; justify-content:center; align-items:center;}
+
+.card{width:1920px; height:1080px; overflow:hidden; position:relative;}
+.card .img{transform:scale(1.15); object-fit:cover; transition:opacity 0.5s, transform 1s;}
+.card:hover .img{transform:scale(1); opacity:0.5;}
+
+.text{
+  position:absolute; top:0; left:0;
+  width:100%; height:100%;
+  text-align:center; color:#fff;
+  display:flex; flex-direction:column; justify-content:center; align-items:center;
+  opacity:0; transition:opacity 0.5s;
+}
+
+.text h2{text-transform:uppercase; text-shadow:1px 1px 10px rgba(0,0,0,0.5); margin-bottom:10px;}
+.text p{font-size:14px; line-height:1.4;}
+
+.card:hover .text{opacity:1;}
+</style>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <img src="도자기.jpg" class="img">
+            <div class="text">
+                <h2>Pottery festival</h2>
+                <p>경기광주시에서 개최되는 왕실도자기 축제에 방문해보세요.
+                     도자기들의 아름다운 빛깔은 사람의 마음을 매료시킵니다. 경기광주 곤지암에서 도자기를 직접만들거나 구매할수있습니다. </p>
+
+        </div>
+        </div>
+    </div>
+</body>
+</html>
